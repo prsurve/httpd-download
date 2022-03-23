@@ -15,7 +15,7 @@ def download_file():
     open('/mnt/10kb', 'wb').write(r.content)
 
 def url_checker():
-    url = 'http://httpd-download:8080'
+    url = 'http://httpd-download:8080/10kb'
     while True:
         try:
             status_code = urllib.request.urlopen(url).getcode()
