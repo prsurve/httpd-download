@@ -29,8 +29,8 @@ def url_checker():
 
 def run_io():
     src = "/mnt/10kb"
-    # while True:
-    for i in range(1 , 300):
+    while True:
+#     for i in range(1 , 300):
         dst = f"/mnt/10kb-{uuid.uuid4()}"
         shutil.copy(src, dst)
         logging.info(f"Data written {dst}")
